@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Al Baironi — Operations Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background: #f4f7f4;
+    color: #1a2e1a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .portal {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+  }
+
+  .logo {
+    width: 48px;
+    height: 48px;
+    background: #2d6a2d;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 auto 20px;
+    letter-spacing: -0.5px;
+  }
+
+  .company {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #5a8a5a;
+    margin-bottom: 6px;
+  }
+
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a2e1a;
+    margin-bottom: 6px;
+    letter-spacing: -0.3px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    color: #7a9a7a;
+    margin-bottom: 40px;
+  }
+
+  .divider {
+    width: 40px;
+    height: 2px;
+    background: #2d6a2d;
+    margin: 0 auto 36px;
+    border-radius: 2px;
+  }
+
+  .module-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .module-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px;
+    background: #fff;
+    border: 1.5px solid #c8dcc8;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1a2e1a;
+    transition: all 0.18s;
+    box-shadow: 0 1px 4px rgba(45,106,45,0.06);
+  }
+
+  .module-btn:hover {
+    background: #2d6a2d;
+    border-color: #2d6a2d;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(45,106,45,0.22);
+    transform: translateY(-1px);
+  }
+
+  .btn-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .btn-icon {
+    font-size: 20px;
+    color: #2d6a2d;
+    transition: color 0.18s;
+    line-height: 1;
+  }
+
+  .module-btn:hover .btn-icon { color: #fff; }
+
+  .btn-text { text-align: left; }
+
+  .btn-name {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .btn-desc {
+    font-size: 11.5px;
+    color: #7a9a7a;
+    margin-top: 2px;
+    transition: color 0.18s;
+  }
+
+  .module-btn:hover .btn-desc { color: rgba(255,255,255,0.7); }
+
+  .btn-arrow {
+    font-size: 16px;
+    color: #a0baa0;
+    transition: color 0.18s, transform 0.18s;
+  }
+
+  .module-btn:hover .btn-arrow {
+    color: #fff;
+    transform: translateX(3px);
+  }
+
+  .footer {
+    margin-top: 44px;
+    font-size: 11px;
+    color: #a0baa0;
+    letter-spacing: 0.3px;
+  }
+</style>
+</head>
+<body>
+
+<div class="portal">
+  <div class="logo">AB</div>
+  <p class="company">Al Baker Group · Al Baironi</p>
+  <h1>Operations Portal</h1>
+  <p class="subtitle">S&amp;D Process Enhancement Tools</p>
+  <div class="divider"></div>
+
+  <div class="module-list">
+
+    <a class="module-btn" href="bin_tag_generator.html">
+      <div class="btn-left">
+        <span class="btn-icon">🏷️</span>
+        <div class="btn-text">
+          <div class="btn-name">Bin Tag Generator</div>
+          <div class="btn-desc">Warehouse labelling &amp; bin location tags</div>
+        </div>
+      </div>
+      <span class="btn-arrow">→</span>
+    </a>
+
+    <a class="module-btn" href="OT_Report_Builder.html">
+      <div class="btn-left">
+        <span class="btn-icon">📊</span>
+        <div class="btn-text">
+          <div class="btn-name">OT Report Builder</div>
+          <div class="btn-desc">Monthly overtime sheets &amp; summary matrix</div>
+        </div>
+      </div>
+      <span class="btn-arrow">→</span>
+    </a>
+
+  </div>
+
+  <p class="footer">Internal Use Only &nbsp;·&nbsp; Healthcare · Consumer · FMCG</p>
+</div>
+
+</body>
+</html>
